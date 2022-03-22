@@ -9,12 +9,8 @@
     <dl>
       <li *ngFor="let num of numbers; let i=index;">
 
-        <div class="isPrime" *ngIf="isPrimeNumber[i]==0">
-          False - {{num}}      
-        </div>
-
-        <div class="isNotPrime" *ngIf="isPrimeNumber[i]==1">
-          True - {{num}}      
+        <div class="numbers" [ngStyle]="{'background-color': isPrimeNumber[i] == 0 ? 'red': 'yellow'}">
+          {{isPrimeNumber[i] == 0 ? 'False' : 'True'}} - {{num}}      
         </div>
 
       </li>

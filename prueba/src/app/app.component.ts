@@ -6,10 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Fibonacci";
+  title: string = "Fibonacci";
+  booleanPrint: string = "";
   numbers = [0, 1];
   isPrimeNumber = [0];
   foundDividers: number = 0;
+
   ngOnInit(): void{
     for (let i = 0; i<50; i++) {
       this.numbers[i+2] = this.numbers[i] + this.numbers[i+1];

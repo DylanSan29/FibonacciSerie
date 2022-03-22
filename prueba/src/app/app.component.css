@@ -6,15 +6,9 @@
     width: 100%;
     text-align: var(--text-alignPrimes)
 }
-.isNotPrime{
+.numbers{
     width: var(--width-divPrimes);
     margin: var(--margin-primes);
-    background-color: yellow;
     text-align: center
 }
-.isPrime{
-    width: var(--width-divPrimes);
-    margin: var(--margin-primes);
-    background-color: red;
-    text-align: var(--text-alignPrimes)
-}
+
